@@ -1,6 +1,6 @@
 .tweetBox {
-    border: crimson;
-    border-style: dashed;
+    border: grey;
+    border-style: solid;
 }
 
 button {
@@ -12,4 +12,8 @@ button {
     background-color: cyan;
     color: black;
     font-size: larger;
+}
+
+Tweet {
+    margin-left: 20%;z
 }

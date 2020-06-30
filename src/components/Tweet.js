@@ -35,16 +35,15 @@ class Tweet extends React.Component {
       'Lets keep it going - I love you, support you, and we look at but also cause War!',
       'NEW TOTALITARIANS: GOP elites join with the wonderful and unforgettable visit, Prime Minister Theresa May today to award them the face of grave danger....',
     ];
-    this.index = Math.floor(Math.random() * this.tweets.length);
+    this.state = { index: Math.floor(Math.random() * this.tweets.length) };
   }
 
   changeIndex() {
-      this.index = Math.floor(Math.random() * this.tweets.length);
+    this.setState({ index: Math.floor(Math.random() * this.tweets.length) });
   }
-  
+
   render() {
-    return <p>{this.tweets[this.index]}</p>
-        
+    return <p>{this.tweets[this.state.index]}</p>;
   }
 }
 
